@@ -1,4 +1,4 @@
-# 🛡️ SentinelSOC - AI-Powered Security Operations Center
+# ️ SentinelSOC - AI-Powered Security Operations Center
 
 <div align="center">
 
@@ -23,13 +23,13 @@
 
 ---
 
-## 📖 Overview
+##  Overview
 
 **SentinelSOC** is a comprehensive, full-stack Security Operations Center (SOC) platform designed as a **B.Tech Cybersecurity Minor Project**. It simulates real-world SOC operations by integrating log ingestion, automated threat detection, alert management, incident response, IOC investigation, and report generation — all within a modern, dark-themed dashboard.
 
 Inspired by enterprise tools like **Microsoft Sentinel**, **Splunk ES**, **IBM QRadar**, and **Wazuh**, SentinelSOC provides hands-on experience with the workflows and technologies used in professional security operations.
 
-### 🎯 Educational Objectives
+###  Educational Objectives
 
 - Understand how modern SOC platforms operate
 - Learn threat detection and alert triage workflows
@@ -39,15 +39,15 @@ Inspired by enterprise tools like **Microsoft Sentinel**, **Splunk ES**, **IBM Q
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔐 Authentication & Authorization
+###  Authentication & Authorization
 - **JWT-based authentication** with access/refresh tokens
 - **Role-based access control** (Admin & SOC Analyst roles)
 - Password hashing with bcrypt
 - Session management and audit logging
 
-### 📊 Real-Time Dashboard
+###  Real-Time Dashboard
 - Total alerts by severity (Critical, High, Medium, Low)
 - Open vs. closed incident metrics
 - **Interactive charts** (alerts over time, severity distribution, top attacks)
@@ -55,7 +55,7 @@ Inspired by enterprise tools like **Microsoft Sentinel**, **Splunk ES**, **IBM Q
 - Recent alerts and incidents feed
 - Dark-themed, responsive design
 
-### 📝 Multi-Format Log Ingestion
+###  Multi-Format Log Ingestion
 - Support for **CSV, JSON, TXT, LOG** files
 - Pre-configured parsers for:
   - Windows Event Logs
@@ -65,17 +65,17 @@ Inspired by enterprise tools like **Microsoft Sentinel**, **Splunk ES**, **IBM Q
 - Drag-and-drop upload interface
 - Batch processing with progress feedback
 
-### 🚨 Automated Detection Engine
+###  Automated Detection Engine
 - **Modular rule-based detection** system
 - Built-in detection rules:
-  - 🔴 Brute Force Attack Detection (T1110)
-  - 🟠 Encoded PowerShell Commands (T1059.001)
-  - 🟡 RDP Login Outside Business Hours (T1021.001)
-  - 🟢 Network Port Scanning (T1046)
+  -  Brute Force Attack Detection (T1110)
+  -  Encoded PowerShell Commands (T1059.001)
+  -  RDP Login Outside Business Hours (T1021.001)
+  -  Network Port Scanning (T1046)
 - Custom rule creation via UI or API
 - Real-time alert generation upon log ingestion
 
-### 🎯 Alert Management Center
+###  Alert Management Center
 - Filtering by severity, status, date range
 - Full-text search across alerts
 - Bulk status updates (Open → In Progress → Resolved)
@@ -83,7 +83,7 @@ Inspired by enterprise tools like **Microsoft Sentinel**, **Splunk ES**, **IBM Q
 - False positive marking
 - Detailed alert view with raw log data
 
-### 🚨 Incident Management
+###  Incident Management
 - Create incidents from single or multiple alerts
 - **Full incident lifecycle**: Open → Investigating → Contained → Remediated → Closed
 - Investigation timeline tracking
@@ -92,7 +92,7 @@ Inspired by enterprise tools like **Microsoft Sentinel**, **Splunk ES**, **IBM Q
 - **MITRE ATT&CK technique mapping**
 - Recommendations and evidence attachment
 
-### 🔍 IOC Lookup & Investigation
+###  IOC Lookup & Investigation
 - Support for multiple IOC types:
   - **IP Address** (GeoIP, reverse DNS, ISP lookup)
   - **Domain** (DNS resolution, WHOIS)
@@ -101,12 +101,12 @@ Inspired by enterprise tools like **Microsoft Sentinel**, **Splunk ES**, **IBM Q
 - Integration with public threat intelligence APIs
 - Lookup history tracking
 
-### 🎯 MITRE ATT&CK Integration
+###  MITRE ATT&CK Integration
 - Alert-to-technique mapping
 - Clickable technique IDs linking to MITRE knowledge base
 - Technique-based threat categorization
 
-### 📄 PDF Report Generation
+###  PDF Report Generation
 - **Incident reports** with:
   - Executive summary
   - Timeline of events
@@ -117,14 +117,14 @@ Inspired by enterprise tools like **Microsoft Sentinel**, **Splunk ES**, **IBM Q
 - One-click download as PDF
 - Professional formatting with ReportLab
 
-### 🛡️ Rule Management
+### ️ Rule Management
 - Create, edit, enable/disable detection rules
 - Regex and keyword pattern support
 - Severity configuration per rule
 - MITRE technique assignment
 - Rule testing capability
 
-### 🔒 Security Features
+###  Security Features
 - **XSS Protection**: Input sanitization and output encoding
 - **NoSQL Injection Prevention**: Input validation and sanitization
 - **CSRF Protection**: Security headers
@@ -134,18 +134,18 @@ Inspired by enterprise tools like **Microsoft Sentinel**, **Splunk ES**, **IBM Q
 
 ---
 
-## 🎬 Demo
+##  Demo
 
 ### Live Demo
-> 🔗 **Frontend**: [https://sentinelsoc.vercel.app](https://sentinelsoc.vercel.app)  
-> 🔗 **API**: [https://sentinelsoc-api.onrender.com](https://sentinelsoc-api.onrender.com)
+>  **Frontend**: [https://sentinelsoc.vercel.app](https://sentinelsoc.vercel.app)  
+>  **API**: [https://sentinelsoc-api.onrender.com](https://sentinelsoc-api.onrender.com)
 
 ### Demo Credentials
 
 | Role | Username | Password |
 |------|----------|----------|
-| 🔑 Admin | `admin` | `admin123` |
-| 👤 Analyst | `analyst` | `analyst123` |
+|  Admin | `admin` | `admin123` |
+|  Analyst | `analyst` | `analyst123` |
 
 ### Quick Demo Walkthrough
 
@@ -159,7 +159,7 @@ Inspired by enterprise tools like **Microsoft Sentinel**, **Splunk ES**, **IBM Q
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -171,7 +171,7 @@ Inspired by enterprise tools like **Microsoft Sentinel**, **Splunk ES**, **IBM Q
 | Git | Latest | [git-scm.com](https://git-scm.com/downloads) |
 | npm | ≥ 9.0 | (Included with Node.js) |
 
-### 📦 Local Development Setup
+###  Local Development Setup
 
 #### 1. Clone the Repository
 
@@ -273,32 +273,32 @@ python init_db.py
 
 Expected output:
 
-🔧 Initializing SentinelSOC Database...
-📡 Connecting to MongoDB...
-✅ Connected to MongoDB successfully!
+ Initializing SentinelSOC Database...
+ Connecting to MongoDB...
+ Connected to MongoDB successfully!
 
-📇 Creating indexes...
-✅ Indexes created
+ Creating indexes...
+ Indexes created
 
-👤 Creating default users...
-✅ Users created:
+ Creating default users...
+ Users created:
    Admin: username='admin' password='admin123'
    Analyst: username='analyst' password='analyst123'
 
-🔔 Creating sample alerts...
-✅ Sample alerts created
+ Creating sample alerts...
+ Sample alerts created
 
-📋 Creating detection rules...
-✅ Detection rules created
+ Creating detection rules...
+ Detection rules created
 
-🚨 Creating sample incidents...
-✅ Sample incidents created
+ Creating sample incidents...
+ Sample incidents created
 
-📝 Creating sample logs...
-✅ 10 sample logs created
+ Creating sample logs...
+ 10 sample logs created
 
 ==================================================
-✅ Database initialization complete!
+ Database initialization complete!
 ==================================================
 
 
@@ -308,8 +308,8 @@ bash
 python app.py
 
 
-✅ Backend running at: **http://localhost:5000**  
-📊 Health check: **http://localhost:5000/api/health**
+ Backend running at: **http://localhost:5000**  
+ Health check: **http://localhost:5000/api/health**
 
 #### 4. Frontend Setup
 
@@ -337,7 +337,7 @@ bash
 npm run dev
 
 
-✅ Frontend running at: **http://localhost:3000**
+ Frontend running at: **http://localhost:3000**
 
 #### 5. Access the Application
 
@@ -348,7 +348,7 @@ npm run dev
 
 ---
 
-### 🐳 Docker Setup (Alternative)
+###  Docker Setup (Alternative)
 
 <details>
 <summary>Click to expand Docker instructions</summary>
@@ -368,39 +368,39 @@ docker-compose exec backend python init_db.py
 
 ---
 
-## 📊 Screenshots
+##  Screenshots
 
-### 🔐 Login Page
+###  Login Page
 ![Login Page](screenshots/login.png)
 *Secure JWT-based authentication with role-based access*
 
-### 📊 Dashboard
+###  Dashboard
 ![Dashboard](screenshots/dashboard.png)
 *Real-time security metrics with interactive charts and alerts feed*
 
-### 🚨 Alert Center
+###  Alert Center
 ![Alert Center](screenshots/alerts.png)
 *Comprehensive alert management with filtering and bulk actions*
 
-### 🚨 Incident Management
+###  Incident Management
 ![Incidents](screenshots/incidents.png)
 *Full incident lifecycle tracking with MITRE ATT&CK mapping*
 
-### 📝 Log Ingestion
+###  Log Ingestion
 ![Log Upload](screenshots/logs.png)
 *Drag-and-drop log file upload with multi-format support*
 
-### 🔍 IOC Lookup
+###  IOC Lookup
 ![IOC Lookup](screenshots/ioc.png)
 *IP, domain, URL, and hash investigation interface*
 
-### 📄 Report Generation
+###  Report Generation
 ![Reports](screenshots/reports.png)
 *One-click PDF report generation with executive summaries*
 
 ---
 
-## 🏗️ Architecture
+## ️ Architecture
 
 
 ┌─────────────────────────────────────────────────────────────┐
@@ -439,7 +439,7 @@ docker-compose exec backend python init_db.py
 └─────────────────────────────────────────────────────────────┘
 
 
-### 📁 Project Structure
+###  Project Structure
 
 
 sentinelsoc/
@@ -512,7 +512,7 @@ sentinelsoc/
 
 ---
 
-## 📚 API Documentation
+##  API Documentation
 
 ### Base URL
 
@@ -610,7 +610,7 @@ curl http://localhost:5000/api/alerts \
 
 ---
 
-## 🧪 Sample Data & Testing
+##  Sample Data & Testing
 
 ### Sample Log Files
 
@@ -650,7 +650,7 @@ npm test
 
 ---
 
-## 🚢 Deployment
+##  Deployment
 
 ### Frontend Deployment (Vercel)
 
@@ -682,26 +682,26 @@ npm test
 
 ---
 
-## 🔒 Security Considerations
+##  Security Considerations
 
-- ✅ Passwords hashed using bcrypt (12 rounds)
-- ✅ JWT tokens with expiration
-- ✅ Role-based access control
-- ✅ Input sanitization against XSS
-- ✅ NoSQL injection prevention
-- ✅ File upload validation
-- ✅ Rate limiting on API endpoints
-- ✅ Security headers (CSP, HSTS, X-Frame-Options)
-- ✅ CORS properly configured
-- ⚠️ **For production**: Change all default secrets and keys
-- ⚠️ **For production**: Enable HTTPS
-- ⚠️ **For production**: Implement proper logging and monitoring
+-  Passwords hashed using bcrypt (12 rounds)
+-  JWT tokens with expiration
+-  Role-based access control
+-  Input sanitization against XSS
+-  NoSQL injection prevention
+-  File upload validation
+-  Rate limiting on API endpoints
+-  Security headers (CSP, HSTS, X-Frame-Options)
+-  CORS properly configured
+- ️ **For production**: Change all default secrets and keys
+- ️ **For production**: Enable HTTPS
+- ️ **For production**: Implement proper logging and monitoring
 
 ---
 
-## 🛣️ Roadmap
+## ️ Roadmap
 
-### Phase 1 (Completed ✅)
+### Phase 1 (Completed )
 - [x] Core authentication system
 - [x] Dashboard with charts
 - [x] Alert management
@@ -711,7 +711,7 @@ npm test
 - [x] Report generation
 - [x] Rule management
 
-### Phase 2 (In Progress 🚧)
+### Phase 2 (In Progress )
 - [ ] WebSocket real-time alerts
 - [ ] Sigma rule format support
 - [ ] AI-powered incident summarization
@@ -720,7 +720,7 @@ npm test
 - [ ] Slack/Teams integration
 - [ ] Custom dashboard widgets
 
-### Phase 3 (Planned 📋)
+### Phase 3 (Planned )
 - [ ] Kubernetes deployment config
 - [ ] Elasticsearch integration
 - [ ] Machine learning anomaly detection
@@ -731,7 +731,7 @@ npm test
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! This project is perfect for students learning cybersecurity, full-stack development, or SOC operations.
 
@@ -766,18 +766,18 @@ Contributions are welcome! This project is perfect for students learning cyberse
 
 ---
 
-## 👨‍💻 Author
+## ‍ Author
 
 **Your Name**
-- 🎓 B.Tech Cybersecurity (5th Semester)
-- 🏫 Your University Name
-- 📧 your.email@example.com
-- 🔗 [LinkedIn](https://linkedin.com/in/yourprofile)
-- 💻 [GitHub](https://github.com/yourusername)
+-  B.Tech Cybersecurity (5th Semester)
+-  Your University Name
+-  your.email@example.com
+-  [LinkedIn](https://linkedin.com/in/yourprofile)
+-  [GitHub](https://github.com/yourusername)
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **MITRE ATT&CK** for the threat framework
 - **MongoDB** for the database platform
@@ -795,7 +795,7 @@ Contributions are welcome! This project is perfect for students learning cyberse
 
 ---
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -831,7 +831,7 @@ SOFTWARE.
 
 ---
 
-## 📊 Project Statistics
+##  Project Statistics
 
 ![GitHub stars](https://img.shields.io/github/stars/yourusername/sentinelsoc?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/yourusername/sentinelsoc?style=social)
@@ -845,7 +845,7 @@ SOFTWARE.
 
 <div align="center">
 
-### 💡 Built with ❤️ for the Cybersecurity Community
+###  Built with ️ for the Cybersecurity Community
 
 **If you found this project helpful, please give it a ⭐**
 
@@ -855,18 +855,18 @@ SOFTWARE.
 
 ---
 
-## 📧 Support
+##  Support
 
 For support, questions, or collaboration:
 
-- 📧 **Email**: your.email@example.com
-- 💬 **Discord**: YourDiscordServer
-- 🐦 **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
-- 📖 **Documentation**: [Wiki](https://github.com/yourusername/sentinelsoc/wiki)
+-  **Email**: your.email@example.com
+-  **Discord**: YourDiscordServer
+-  **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
+-  **Documentation**: [Wiki](https://github.com/yourusername/sentinelsoc/wiki)
 
 ---
 
-## 🎓 For Students
+##  For Students
 
 This project is designed as a **B.Tech Minor Project** demonstrating:
 
@@ -892,7 +892,7 @@ This project is designed as a **B.Tech Minor Project** demonstrating:
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by Your Name | &copy; 2024 SentinelSOC</sub>
+  <sub>Built with ️ by Your Name | &copy; 2024 SentinelSOC</sub>
 </div>
 
 
@@ -907,10 +907,3 @@ This README provides:
 - Screenshots placeholder sections
 - Star history and statistics
 - MIT License included
-
-Make sure to:
-1. Replace `yourusername` with your actual GitHub username
-2. Replace `Your Name` with your name
-3. Add actual screenshots to a `screenshots/` folder
-4. Update the demo URLs when deployed
-5. Add your LinkedIn and other social links
